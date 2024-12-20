@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priyal | Practice</title>
+</head>
+<style>
+    div {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: red;
+    }
+    .container {
+        background-color: black;
+    }
+    #main {
+        background-color: cyan;
+    }
+    #main.container p{
+        background-color: violet;
+        color: red;
+        font-size: 20px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .container::before {
+        content: "before";
+        background-color: yellow;
+    }
+    .container::after {
+        content: "after";
+        background-color: red;
+    }
+</style>
+<body>
+    <p>sdf</p>
+    <div style="background-color: green;"></div>
+    <div class="container"></div>
+    <div id="main" class="container">
+        <p>something</p>
+    </div>
+    <button>button</button>
+    <a href="https://www.google.com">a tag</a>
+    <h1>h1 tag</h1>
+</body>
+</html>
