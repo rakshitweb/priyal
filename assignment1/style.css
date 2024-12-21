@@ -16,10 +16,16 @@
 #middle {
     margin: auto;
     width: 50%;
+    height: 50%;
     background-color: red;
     border: cyan;
     padding: 10px;
     text-align: center;
+}
+
+#priyal {
+    background-color: white;
+    border: white;
 }
 
 .center {
@@ -35,7 +41,7 @@
     border-bottom: 50px solid yellow;
     padding: 20px;
     margin: auto;
-    width: 50%;
+    /* width: 50%; */
 }
 
 
