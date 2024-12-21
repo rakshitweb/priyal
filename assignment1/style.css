@@ -1,0 +1,41 @@
+#navbar {
+    position: sticky;
+    top: 0%;
+    background-color: red;
+}
+
+#main {
+    background-color: cyan;
+}
+
+#button {
+    position: relative;
+    margin-left: 200px;
+}
+
+#middle {
+    margin: auto;
+    width: 50%;
+    background-color: red;
+    border: cyan;
+    padding: 10px;
+    text-align: center;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    background-color: blue;
+    padding: 10px;
+    text-align: center;
+}
+
+.line {
+    border-bottom: 50px solid yellow;
+    padding: 20px;
+    margin: auto;
+    width: 50%;
+}
+
+
