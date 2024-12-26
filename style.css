@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --light-color: #FFF5E4;
+    --img-background-color: #e5cb9d;
+    --section-background-color: #fffaf3;
+    --light-pink: #FFE3E1;
+    --medium-pink: #FFD1D1;
+    --caption-color: #ea9797;
+    --dark-pink: #FF9494;
+    --dark-font: #b9703c;
+}
+
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 32rem;
+    /* padding: 2rem; */
+    background-color: var(--light-color);
+    justify-content: space-between;
+}
+
+.navbar .image-container {
+    margin: 2rem;
+    width: 10rem;
+    border-radius: 50%;
+    border: 0.5rem solid var(--img-background-color);
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.tabs {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.tabs .tab {
+    text-decoration: none;
+    color: var(--dark-pink);
+}
+
+.footer {
+    padding: 1rem;
+    background-color: var(--img-background-color);
+    width: 100%;
+}
+
+.footer .footer-text {
+    text-align: center;
+    color: var(--dark-font);
+}
+
+.navbar .navbar-heading {
+    color: var(--dark-pink);
+    display: none;
+}
+
+.main-container {
+    overflow:auto;
+    scroll-behavior: smooth;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.section .heading {
+    color: var(--dark-pink);
+    font-size: 4rem;
+}
+
+.section .caption {
+    color: var(--caption-color);
+    font-size: 2rem;
+}
+
+.section .header {
+    margin-bottom: 3rem;
+}
+
+.description {
+    font-size: 1.8rem;
+    text-align: justify;
+    margin-bottom: 3rem;
+}
+
+.icons {
+    display: flex;
+    gap: 2rem;
+}
+
+.icon {
+    width: 2rem;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background-color: var(--section-background-color);
+    padding: 5rem;
+    margin: 8rem;
+    border-radius: 1.5rem;
+    
+}
+
+@media(max-width: 576px) {
+    body {
+        flex-direction: column;
+    }
+    .navbar {
+        width: 100%;
+        max-width: none;
+        flex-direction: row;
+        padding: 1rem;
+    }
+    .footer {
+        display: none;
+    }
+    .tabs {
+        display: none;
+    }
+    .navbar .image-container {
+        display: none;
+    }
+    .navbar .navbar-heading {
+        display: block;
+    }
+}
+
